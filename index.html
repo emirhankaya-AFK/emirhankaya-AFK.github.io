@@ -745,30 +745,30 @@
           <span class="category-pill" style="background:rgba(245,158,11,0.15);color:#fbbf24;border:1px solid rgba(245,158,11,0.3);">Computer Vision & Industrial AI (EEE Aligned)</span>
           <span class="audit-stamp">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            28/28 Pytest · IPC-A-610 Compliant · ~377 boards/min
+            30/30 Pytest · 88.9% QC Pass/Fail · Synthetic AOI Prototype
           </span>
         </div>
-        <h3>Industrial Visual Inspection AI: PCB Defect Detection & Quality Control</h3>
+        <h3>Synthetic PCB AOI Prototype & Quality Control Engine</h3>
         <p class="summary">
-          An automated optical inspection (AOI) platform for electronic assembly manufacturing. Detects, localizes, and classifies 6 canonical IPC-A-610 surface defect classes: missing hole, mouse bite, open circuit, short, spur, and spurious copper with distance transform Euclidean radius checks, 1D track continuity analysis, operator zoom galleries, and conveyor batch yield analytics.
+          A high-speed automated optical inspection (AOI) computer vision prototype and benchmark testbed for printed circuit board defect detection. Built with NumPy and SciPy morphological operations and Euclidean distance transforms on procedurally synthesized FR4 boards with exact ground-truth coordinates. Evaluates 6 simulated IPC-A-610 surface defect categories with transparent baseline metrics, real-time FastAPI microservice, and a Streamlit operator station.
         </p>
 
         <div class="feature-highlights">
           <div class="feature-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <span><strong>IPC-A-610 Class 3 Standards:</strong> Full coverage of 6 canonical electronic assembly surface defect categories with severity grading.</span>
+            <span><strong>Simulated IPC-A-610 Taxonomy:</strong> Models 6 canonical electronic assembly defect categories with severity grading and exact ground truth.</span>
           </div>
           <div class="feature-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <span><strong>Distance Transform Core:</strong> Separates thick annular via pads from thin routing traces with Euclidean distance fields.</span>
+            <span><strong>Distance Transform Core:</strong> Separates thick annular via pads from thin routing traces with Euclidean distance fields for missing drill hole detection (0.89 F1).</span>
           </div>
           <div class="feature-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <span><strong>Production REST Microservice:</strong> FastAPI endpoints for single board inspection, annotated image rendering, and batch conveyor runs.</span>
+            <span><strong>Production REST Microservice:</strong> Hardened FastAPI endpoints for single board inspection, annotated image rendering, and batch conveyor runs with MIME and payload validation.</span>
           </div>
           <div class="feature-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <span><strong>Operational Benchmarks:</strong> 88.9% Pass/Fail QC classification accuracy, 0.7807 Mean IoU, and ~377 boards/min throughput.</span>
+            <span><strong>Transparent Benchmark Suite:</strong> 88.9% Pass/Fail QC classification accuracy, 0.7807 Matched TP Mean IoU, and ~300+ boards/min throughput.</span>
           </div>
         </div>
 
@@ -776,9 +776,9 @@
           <div class="tags">
             <span class="tag">FastAPI</span>
             <span class="tag">SciPy (ndimage)</span>
+            <span class="tag">NumPy</span>
             <span class="tag">Pillow</span>
             <span class="tag">Streamlit</span>
-            <span class="tag">IPC-A-610</span>
             <span class="tag">Docker Compose</span>
           </div>
           <div class="card-actions">
