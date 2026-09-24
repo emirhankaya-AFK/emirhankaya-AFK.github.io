@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emirhan Kaya | Software Engineer & Quant Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Emirhan Kaya — Software Engineer specializing in Quantitative Finance, Autonomous AI Agents, and Distributed Document Intelligence Systems.">
+  <meta name="description" content="Portfolio of Emirhan Kaya — Software Engineer specializing in Quantitative Finance, Autonomous AI Agents, Document Intelligence, Industrial Computer Vision, and Edge IoT Streaming Systems.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -552,7 +552,7 @@
       <p>
         Full-lifecycle software engineer building mathematically verified, production-grade applications across
         <strong>quantitative finance analytics</strong>, <strong>autonomous AI DevSecOps agents</strong>,
-        <strong>distributed document intelligence pipelines</strong>, and <strong>industrial computer vision (AOI)</strong>.
+        <strong>distributed document intelligence pipelines</strong>, <strong>industrial computer vision (AOI)</strong>, and <strong>edge IoT streaming telemetry</strong>.
       </p>
     </div>
   </section>
@@ -561,7 +561,7 @@
   <div class="container">
     <div class="metrics-bar">
       <div class="metric-item">
-        <div class="metric-value highlight">139+</div>
+        <div class="metric-value highlight">172+</div>
         <div class="metric-label">Automated Unit Tests</div>
       </div>
       <div class="metric-item">
@@ -569,7 +569,7 @@
         <div class="metric-label">Independent Math Audits</div>
       </div>
       <div class="metric-item">
-        <div class="metric-value">4 / 4</div>
+        <div class="metric-value">5 / 5</div>
         <div class="metric-label">Engineering Pillars</div>
       </div>
       <div class="metric-item">
@@ -583,7 +583,7 @@
   <section id="projects" class="container">
     <div class="section-header">
       <div class="section-eyebrow">Portfolio Centerpiece</div>
-      <h2 class="section-title">Four Cornerstone Systems</h2>
+      <h2 class="section-title">Five Cornerstone Systems</h2>
       <p class="section-desc">Each repository demonstrates production engineering standards: mathematical verifiability, clear architectural boundaries, rigorous test suites, and containerized deployment.</p>
     </div>
 
@@ -783,6 +783,57 @@
           </div>
           <div class="card-actions">
             <a href="https://github.com/emirhankaya-AFK/pcb-defect-detection-platform" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
+              View Repository →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: Industrial Edge Telemetry Platform -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="category-pill" style="background:rgba(6,182,212,0.15);color:#22d3ee;border:1px solid rgba(6,182,212,0.3);">Edge IoT &amp; Real-Time Streaming Systems (EEE Aligned)</span>
+          <span class="audit-stamp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            31/31 Pytest · F1 = 0.79 · 4,600+ events/sec
+          </span>
+        </div>
+        <h3>Industrial Edge Telemetry &amp; Streaming Anomaly Detection Platform</h3>
+        <p class="summary">
+          A high-throughput edge telemetry gateway and real-time streaming anomaly detection platform for industrial cyber-physical machinery (AC induction motors, CNC spindles, centrifugal pumps). Features MQTT/HTTP ingestion with pure-Python Proto3 wire serialization, HMAC-SHA256 authentication, clock-drift verification, Redis Streams consumer groups with backpressure drop handling and PEL crash recovery, multi-layer streaming anomaly ensemble (EWMA, Rolling Median/MAD Z-Score, Multi-Sensor Correlation Fusion, Isolation Forest), alert debouncing with DLQ containment, and a Streamlit SCADA operations console.
+        </p>
+
+        <div class="feature-highlights">
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Pure-Python Proto3 Wire Serialization:</strong> Native varint and 64-bit IEEE 754 float struct packing with zero external protoc binary dependency.</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Redis Streams with PEL Crash Recovery:</strong> Consumer groups (XREADGROUP, XACK), capacity-bounded deque drop handling, and stale message reclaim (XCLAIM).</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Streaming Multi-Detector Ensemble:</strong> Pre-update EWMA variance protection, Robust Median/MAD Z-scores, and cross-sensor seizure fusion (0.79 F1, 92.4% accuracy).</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Debounced Alert Dispatcher &amp; DLQ:</strong> Suppresses rapid-fire alarm floods, bypasses cooldown on CRITICAL escalation, and quarantines delivery failures.</span>
+          </div>
+        </div>
+
+        <div class="tech-stack-row">
+          <div class="tags">
+            <span class="tag">Python 3.11</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Redis Streams</span>
+            <span class="tag">Protobuf 3</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">SciPy &amp; Scikit-Learn</span>
+            <span class="tag">Docker Compose</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/emirhankaya-AFK/industrial-iot-telemetry-platform" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
               View Repository →
             </a>
           </div>
