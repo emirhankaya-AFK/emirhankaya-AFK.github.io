@@ -552,7 +552,8 @@
       <p>
         Full-lifecycle software engineer building mathematically verified, production-grade applications across
         <strong>quantitative finance analytics</strong>, <strong>autonomous AI DevSecOps agents</strong>,
-        <strong>distributed document intelligence pipelines</strong>, <strong>industrial computer vision (AOI)</strong>, and <strong>edge IoT streaming telemetry</strong>.
+        <strong>distributed document intelligence pipelines</strong>, <strong>industrial computer vision (AOI)</strong>,
+        <strong>edge IoT streaming telemetry</strong>, and <strong>reproducible vector search infrastructure (HNSW)</strong>.
       </p>
     </div>
   </section>
@@ -561,7 +562,7 @@
   <div class="container">
     <div class="metrics-bar">
       <div class="metric-item">
-        <div class="metric-value highlight">178+</div>
+        <div class="metric-value highlight">245+</div>
         <div class="metric-label">Automated Unit &amp; Integration Tests</div>
       </div>
       <div class="metric-item">
@@ -569,7 +570,7 @@
         <div class="metric-label">Independent Math Audits</div>
       </div>
       <div class="metric-item">
-        <div class="metric-value">5 / 5</div>
+        <div class="metric-value">6 / 6</div>
         <div class="metric-label">Engineering Pillars</div>
       </div>
       <div class="metric-item">
@@ -583,7 +584,7 @@
   <section id="projects" class="container">
     <div class="section-header">
       <div class="section-eyebrow">Portfolio Centerpiece</div>
-      <h2 class="section-title">Five Cornerstone Systems</h2>
+      <h2 class="section-title">Six Cornerstone Systems</h2>
       <p class="section-desc">Each repository demonstrates production engineering standards: mathematical verifiability, clear architectural boundaries, rigorous test suites, and containerized deployment.</p>
     </div>
 
@@ -834,6 +835,57 @@
           </div>
           <div class="card-actions">
             <a href="https://github.com/emirhankaya-AFK/industrial-iot-telemetry-platform" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
+              View Repository →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6: Vector Search & HNSW Engine -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="category-pill pill-ai">AI Infrastructure &amp; Vector Database</span>
+          <span class="audit-stamp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            35/35 Pytest · Ground-Truth Baseline &amp; WAL Recovery Verified
+          </span>
+        </div>
+        <h3>Atlas Vector — HNSW ANN Search Engine &amp; Benchmark Lab</h3>
+        <p class="summary">
+          An educational and reproducible Hierarchical Navigable Small World (HNSW) approximate nearest neighbor (ANN) vector search engine and benchmark laboratory built from first principles in pure Python and NumPy. Features layered navigable proximity graphs with Malkov &amp; Yashunin heuristic diversity pruning, exact brute-force FlatIndex ground-truth verification, append-only Write-Ahead Logging (WAL) with strict <code>os.fsync</code> disk durability, atomic binary snapshots, collection manifest catalog auto-recovery on startup, FastAPI REST gateway, and a Streamlit interactive exploration terminal with 2D PCA projection.
+        </p>
+
+        <div class="feature-highlights">
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Hierarchical Navigable Small World Graph:</strong> Layered skip-list graph traversal with candidate min-heaps, dynamic neighbor max-heaps, and directional diversity pruning.</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Exact Brute-Force Ground Truth Baseline:</strong> Mathematical FlatIndex calculating exact top-k for rigorous Recall@1 and Recall@10 validation (measured Recall@10: 0.981 on N=2,000, 0.905 on N=5,000).</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Durable WAL &amp; Snapshot Recovery:</strong> Append-only JSONL write-ahead log with mandatory <code>os.fsync</code>, atomic temporary file replacement, and catalog auto-recovery across reboots.</span>
+          </div>
+          <div class="feature-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <span><strong>Interactive Lab &amp; 2D PCA Space:</strong> Streamlit terminal rendering real-time SVD dimensionality reduction, query vector projection, and efSearch Pareto frontier trade-off curve.</span>
+          </div>
+        </div>
+
+        <div class="tech-stack-row">
+          <div class="tags">
+            <span class="tag">Python 3.11</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">HNSW Graph</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">WAL &amp; Snapshots</span>
+            <span class="tag">Docker Compose</span>
+          </div>
+          <div class="card-actions">
+            <a href="https://github.com/emirhankaya-AFK/atlas-vector-hnsw-engine" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
               View Repository →
             </a>
           </div>
